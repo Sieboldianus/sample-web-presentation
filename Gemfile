@@ -1,8 +1,11 @@
 source "https://rubygems.org"
 
-# Hello! This is where you manage which Jekyll version is used to run.
-# When you want to use a different version, change it below, save the
-# file and run `bundle install`. Run Jekyll with `bundle exec`, like so:
+# This is where you manage the gems that are required to run this presentation.
+# You may change versions or add gems below, then save and install dependencies:
+#
+#     bundle install
+#
+# Then run Jekyll like so:
 #
 #     bundle exec jekyll serve
 #
