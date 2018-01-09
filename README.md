@@ -4,12 +4,10 @@ How to setup your new VGIscience presentation
 To create a new presentation:
 
 1. Fork this project by selecting the `Fork` button below the project headline on this page.
-2. Select your user name or the group, which the website is for.
-3. In the new project, select `Settings` in the top-level navigation and
-    1. remove or change the project description
-    2. scroll down to `Rename repository` and rename both name and path
+2. Select your user name or the group, in which you want to fork the presentation template.
+3. In the new project, select `Settings - General` in the left navigation, expand `Advanced settings`, scroll down to `Rename repository` and rename both name and path to your needs
     
-    The website will automatically be accessible under a subdomain of `namespace.vgiscience.org`. The namespace is defined by your username or the group name you created this project under. [Read about some practical examples before choosing a project name](https://gitlab.vgiscience.de/help/user/project/pages/getting_started_part_one.md#practical-examples). Gitlab Pages is already enabled for this project. The corresponding Pages wildcard domain is `*.vgiscience.org`.
+    The presentation will automatically be accessible under a subdomain of `namespace.vgiscience.org`. The namespace is defined by your username or the group name you created this project under. [Read about some practical examples before choosing a project name](https://gitlab.vgiscience.de/help/user/project/pages/getting_started_part_one.md#practical-examples). Gitlab Pages is already enabled for this project. The corresponding Pages wildcard domain is `*.vgiscience.org`.
 
 4. Go to the file repository (select `Repository` in the top-level navigation) and edit at least the `baseurl` setting in the file [_config.yml](_config.yml) to `/YOUR-PROJECT-NAME` (click the file name in the list, the `edit` button then is on the right next to the red `delete` button). You may also edit the title, email and description settings. Do not edit anything below `# Build settings`! Hit `Commit changes` to save your edit. With this commit you have just triggered the first build process of your new website.
 5. Wait a minute for the build process to pass and head over to your new website at `https://YOUR-USER-OR-GROUPNAME.vgiscience.org/YOUR-PROJECT-NAME`
