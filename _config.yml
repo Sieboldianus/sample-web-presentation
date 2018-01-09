@@ -1,7 +1,7 @@
 theme: vgiscience-presentation-theme
 
 # the presentation title
-title: Jekyll Theme Gem for VGIscience Presentations
+title: VGIscience Presentation Template
 
 controls: true # direction arrows in the presentation
 progress: true # progress bar
@@ -9,7 +9,7 @@ center: true # center vertically
 width: 1280 # widescreen 1280, classic 960
 transition: fade # none/fade/slide/convex/concave/zoom
 
-baseurl: / # adjust to the path of your presentation
+baseurl: / # adjust to the path of your presentation, e.g. /my-presentation
 
 # Don't change anything below
 markdown: kramdown
