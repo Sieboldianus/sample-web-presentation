@@ -3,7 +3,7 @@ theme: vgiscience-presentation-theme
 # the presentation title
 title: Jekyll Theme Gem for VGIscience Presentations
 
-controls: false # direction arrows in the presentation
+controls: true # direction arrows in the presentation
 progress: true # progress bar
 center: true # center vertically
 width: 1280 # widescreen 1280, classic 960
