@@ -23,13 +23,12 @@ There are some example slides within the `_posts` directory. Edit or delete them
 
 Add content to the page using Markdown syntax. [Read the help page for Markdown Syntax](https://gitlab.vgiscience.de/help/user/markdown.md) (it's very easy!)
 
-Syntax examples:
-----------------
-
+| Features          | Syntax                                                   |
+|-------------------|----------------------------------------------------------|
 | Fragments         | add `{% fragment %}` at the end of the line              |
 | Vertical slides   | add `--` between slide content                           |
-| Background color  | add `{% background green %} ` at the top of the slide    |
-| Speaker Notes     | add `Note:` to slide, everything below is speaker notes  |
+| Background color  | add e.g `{% background green %}` to the top of the slide |
+| Speaker Notes     | add `Note:` to slide, everything below is a speaker note |
 | Code snippets     | indent code by four spaces                               |
 
 Also see the example slides in `_posts` directory.
