@@ -11,7 +11,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.6.0"
+gem "jekyll", "~> 3.7"
 
 # This is the vgiscience theme for your new presentation.
 gem "vgiscience-presentation-theme", :git => "https://gitlab.vgiscience.de/design/themes/jekyll/vgiscience-presentation-theme.git"
