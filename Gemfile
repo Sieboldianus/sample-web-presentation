@@ -14,7 +14,7 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.7"
 
 # This is the vgiscience theme for your new presentation.
-gem "vgiscience-presentation-theme", :git => "https://gitlab.vgiscience.de/design/themes/jekyll/vgiscience-presentation-theme.git"
+gem "vgiscience-presentation-theme", :git => "https://gitlab.vgiscience.de/design/themes/presentations/vgiscience.git"
 
 group :jekyll_plugins do
     gem "jekyll-revealjs-fragments", :git => "https://gitlab.vgiscience.de/ml/jekyll-revealjs-fragments.git"
