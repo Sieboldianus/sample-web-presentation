@@ -2,5 +2,5 @@
 
 It's also possible to do fragments.
 
-- Like {% fragment %}
-- This {% fragment %}
+- {% fragment %} Like 
+- {% fragment %} This
