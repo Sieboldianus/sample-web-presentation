@@ -9,7 +9,7 @@ center: true # center vertically
 width: 1280 # widescreen 1280, classic 960
 transition: fade # none/fade/slide/convex/concave/zoom
 
-baseurl: /presentation # adjust to the path of your presentation
+baseurl: /template # adjust to the path of your presentation
 
 # Don't change anything below
 markdown: kramdown
