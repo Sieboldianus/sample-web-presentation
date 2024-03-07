@@ -2,5 +2,5 @@
 
 It's also possible to do fragments.
 
-- {% fragment %} Like 
-- {% fragment %} This
+- <span class="fragment"> Like 
+- <span class="fragment"> This
