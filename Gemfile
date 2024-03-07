@@ -13,10 +13,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 3.7"
 
-# This is the vgiscience theme for your new presentation.
-gem "vgiscience-presentation-theme", :git => "https://gitlab.vgiscience.de/design/themes/presentations/vgiscience.git"
+# This is the ioer theme for your new presentation.
+gem "ioer-presentation-theme", :git => "https://gitlab.vgiscience.de/ad/presentation-theme-2024.git"
 
-group :jekyll_plugins do
-    gem "jekyll-revealjs-fragments", :git => "https://gitlab.vgiscience.de/ml/jekyll-revealjs-fragments.git"
-    gem "jekyll-revealjs-backgrounds", :git => "https://gitlab.vgiscience.de/ml/jekyll-revealjs-backgrounds.git"
-end
+gem "webrick", "~> 1.8"
