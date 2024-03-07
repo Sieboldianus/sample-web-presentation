@@ -14,6 +14,6 @@ source "https://rubygems.org"
 gem "jekyll", "~> 3.7"
 
 # This is the ioer theme for your new presentation.
-gem "ioer-presentation-theme", :git => "git@gitlab.hrz.tu-chemnitz.de:ioer/common/web-presentation-theme.git"
+gem "ioer-presentation-theme", :git => "https://gitlab.hrz.tu-chemnitz.de/ioer/common/web-presentation-theme.git"
 
 gem "webrick", "~> 1.8"
