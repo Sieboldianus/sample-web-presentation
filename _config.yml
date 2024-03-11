@@ -3,6 +3,10 @@ theme: ioer-presentation-theme
 # the presentation title
 title: IOER Presentation Template
 
+firstslide-title: Welcome
+firstslide-subtitle: .. to the IOER example web presentation  
+firstslide-author: <br>with RevealJS!
+
 controls: true # direction arrows in the presentation
 progress: true # progress bar
 center: true # center vertically
