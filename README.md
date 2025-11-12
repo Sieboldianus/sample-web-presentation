@@ -48,9 +48,10 @@ Sometimes, a physical copy of a slide is requested for archiving purposes. To fu
     - Delete White pages
     - Delete first Page
 - Use CTRL+S in Chrome to save screenshot of first Page
-    - Open first PDF slide in Libre Draw
+    - Open Irfanview
     - Paste screenshot
-    - Add Hyperlink to Original Web Slide
-    - Export to PDF
-- Add First slide in `PDF4QT Doc Page Organizer`
+    - Save to single page PDF
+    - Add Hyperlink to Original Web Slide (e.g. PDFXchange or other)
+    - Save edited PDF
+- Add First slide in `PDF4QT Page Master`
 - Group again and make new PDF
