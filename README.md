@@ -1,4 +1,4 @@
-How to setup your new IOER presentation
+How to setup your new IOER web presentation
 =============================================
 
 To create a new presentation:
@@ -32,3 +32,25 @@ Add content to the page using Markdown syntax. [Read the help page for Markdown 
 | Code snippets     | indent code by four spaces                               |
 
 Also see the example slides in `_posts` directory.
+
+----
+
+# Web slides to PDF workflow
+
+Sometimes, a physical copy of a slide is requested for archiving purposes. To fulfil this request, you can create a static PDF of the slides.
+
+- export with chrome and `/?print-pdf`
+    - https://ioer.gp.hrz.tu-chemnitz.de/common/presentation/?print-pdf#/
+    - or locally:
+    - http://127.0.0.1:4000/common/presentation/?print-pdf#/
+- Optionally edit PDF (e.g. Open in `PDF4QT Doc Page Organizer`):
+    - Ungroup
+    - Delete White pages
+    - Delete first Page
+- Use CTRL+S in Chrome to save screenshot of first Page
+    - Open first PDF slide in Libre Draw
+    - Paste screenshot
+    - Add Hyperlink to Original Web Slide
+    - Export to PDF
+- Add First slide in `PDF4QT Doc Page Organizer`
+- Group again and make new PDF
