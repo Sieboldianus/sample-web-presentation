@@ -43,7 +43,7 @@ Sometimes, a physical copy of a slide is requested for archiving purposes. To fu
     - https://ioer.gp.hrz.tu-chemnitz.de/common/presentation/?print-pdf#/
     - or locally:
     - http://127.0.0.1:4000/common/presentation/?print-pdf#/
-- Optionally edit PDF (e.g. Open in `PDF4QT Doc Page Organizer`):
+- Optionally edit PDF (e.g. Open in `PDF4QT Page Master`):
     - Ungroup
     - Delete White pages
     - Delete first Page
@@ -51,7 +51,7 @@ Sometimes, a physical copy of a slide is requested for archiving purposes. To fu
     - Open Irfanview
     - Paste screenshot
     - Save to single page PDF
-    - Add Hyperlink to Original Web Slide (e.g. PDFXchange or other)
+    - Add Hyperlink to Original Web Slide (e.g. `PDFXchange Editor` or other)
     - Save edited PDF
 - Add First slide in `PDF4QT Page Master`
 - Group again and make new PDF
