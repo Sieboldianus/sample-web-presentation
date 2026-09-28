@@ -31,3 +31,5 @@ conference_place: "Dresden, Germany"
 # Markdown settings
 markdown: kramdown
 markdown_ext: ignore
+
+doi: "10.5281/zenodo.23011567"
