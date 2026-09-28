@@ -14,6 +14,7 @@
   Umbrella Canopy.
 </p>
 
+
 <div class="background-attribution" style="position: fixed; bottom: -25px; right: 25px;">
   Background: <a href="https://www.flickr.com/photos/jennifer-kecl/4903210965/">"六十石山金針花"</a> <br> by jennifer-kecl / <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/" >CC BY-NC-ND 2.0</a>
 </div>
