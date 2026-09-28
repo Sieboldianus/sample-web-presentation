@@ -8,12 +8,12 @@ layout: null
 {% else %}
   {% assign full_url = site.baseurl | default: "" | prepend: "https://slides.ad.ioer.info" | append: "/" %}
 {% endif %}
-@misc{author_{{ year }}_{{ site.baseurl | remove: "/" | default: "slides" }},
+@misc{dunkel_{{ year }}_{{ site.baseurl | remove: "/" | default: "slides" }},
   author       = { {{ author_name }} },
   title        = { {{ site.title }} },
   year         = { {{ year }} },
   {% if site.doi %}doi          = { {{ site.doi }} },{% endif %}
   url          = { {{ full_url }} },
   howpublished = {Presentation slides{% if site.conference_title %} at {{ site.conference_title }}{% endif %}},
-  note         = {Available at {{ full_url }}{% if site.doi %}, DOI: {{ site.doi }}{% endif %}}
+  note         = {Available at {{ full_url }}{% if site.doi %}, DOI: {{ site.doi }}{% endif %}. Compiled with the Academic Presentation Framework, DOI: 10.5281/zenodo.23011567}
 }
