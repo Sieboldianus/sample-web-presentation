@@ -65,13 +65,16 @@ export_pdf:
   image:
     name: astefanutti/decktape:latest
     entrypoint: [""]
+  variables:
+    PUPPETEER_CACHE_DIR: "/home/node/.cache/puppeteer"
+    HOME: "/home/node"
   before_script: []
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
       when: manual
       allow_failure: true
   script:
-    - node /decktape/decktape.js reveal "https://slides.ad.ioer.info${CI_PROJECT_NAME}/" presentation.pdf --size 1280x700 --pause 5500 --load-pause 3000 --chrome-arg=--no-sandbox
+    - node /decktape/decktape.js reveal "https://slides.ad.ioer.info${CI_PROJECT_NAME}/" presentation.pdf --size 1280x700 --pause 5500 --load-pause 3000 --chrome-arg=--no-sandbox --chrome-arg=--disable-setuid-sandbox
   artifacts:
     name: "presentation-pdf-${CI_COMMIT_SHORT_SHA}"
     paths:
