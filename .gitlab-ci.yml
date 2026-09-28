@@ -65,6 +65,7 @@ export_pdf:
   image:
     name: astefanutti/decktape:latest
     entrypoint: [""]
+  before_script: []   # <--- Overrides global before_script so it skips 'bundle install'
   rules:
     - if: $CI_COMMIT_BRANCH == "main"
       when: manual
