@@ -71,7 +71,10 @@ export_pdf:
       when: manual
       allow_failure: true
   script:
-    - node /decktape/decktape.js reveal "https://slides.ad.ioer.info${CI_PROJECT_NAME}/" presentation.pdf --size 1280x700 --pause 5500 --load-pause 3000 --chrome-path chromium-browser --chrome-arg=--no-sandbox
+    # 1. Read baseurl dynamically from _config.yml (e.g. /sample-presentation)
+    - SLIDE_PATH=$(grep '^baseurl:' _config.yml | cut -d ':' -f 2 | tr -d ' "'\' | tr -d '\r')
+    # 2. Run DeckTape using the resolved path
+    - node /decktape/decktape.js reveal "https://slides.ad.ioer.info${SLIDE_PATH}/" presentation.pdf --size 1280x700 --pause 5500 --load-pause 3000 --chrome-path chromium-browser --chrome-arg=--no-sandbox
   artifacts:
     name: "presentation-pdf-${CI_COMMIT_SHORT_SHA}"
     paths:
