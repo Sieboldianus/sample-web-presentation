@@ -8,6 +8,7 @@ before_script:
 
 stages:
   - test
+  - build
   - deploy
   - export
 
@@ -21,15 +22,41 @@ test:
   except:
     - main
 
-pages:
-  stage: deploy
+# Optional deploy to Gitlab pages (e.g. for staging)
+# pages:
+#   stage: pages
+#   script:
+#     - bundle exec jekyll build -d public --config _config.yml,_config_pages.yml
+#   artifacts:
+#     name: pages
+#     paths:
+#       - public
+#   only:
+#     - main
+
+build:
+  stage: build
   script:
-    - bundle exec jekyll build -d public
+    - bundle exec jekyll build -d _site --config _config.yml
   artifacts:
+    name: _site
     paths:
-      - public
+      - _site
   only:
     - main
+
+deploy:
+ stage: deploy
+ image: "registry.gitlab.vgiscience.org/tud_ifk/rsync-ssh-alpine:alpine3.17-r0-v4"
+ before_script:
+ - eval $(ssh-agent -s)
+ - echo "${SSH_PRIVKEY}" | ssh-add -
+ - mkdir -p ~/.ssh
+ - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\tLogLevel QUIET\n\n" > ~/.ssh/config'
+ script:
+ - rsync -avu -zz --no-perms --omit-dir-times --chown=www-data:www-data --chmod=D775,F664 _site/ "${PRODUCTION_DESTINATION}"/public/sample-presentation/
+ only:
+   - main
 
 # Optional manual PDF generation via DeckTape Docker
 # only triggers on manual builds
@@ -49,3 +76,4 @@ export_pdf:
     paths:
       - presentation.pdf
     expire_in: 3 months
+
