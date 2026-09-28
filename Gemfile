@@ -11,9 +11,10 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.7"
+gem "jekyll", "~> 3.10"
 
 # This is the ioer theme for your new presentation.
-gem "ioer-presentation-theme", :git => "https://gitlab.hrz.tu-chemnitz.de/ioer/common/web-presentation-theme.git"
+gem "reveal-presentation-theme", :git => "https://gitlab.hrz.tu-chemnitz.de/ioer/common/web-presentation-theme.git"
 
 gem "webrick", "~> 1.8"
+gem "base64"

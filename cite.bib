@@ -1,0 +1,19 @@
+---
+layout: null
+---
+{% assign author_name = site.firstslide-author | split: "|" | first | strip %}
+{% assign year = site.time | date: "%Y" %}
+{% if site.url and site.url != "" %}
+  {% assign full_url = site.baseurl | default: "" | prepend: site.url | append: "/" %}
+{% else %}
+  {% assign full_url = site.baseurl | default: "" | prepend: "https://slides.ad.ioer.info" | append: "/" %}
+{% endif %}
+@misc{author_{{ year }}_{{ site.baseurl | remove: "/" | default: "slides" }},
+  author       = { {{ author_name }} },
+  title        = { {{ site.title }} },
+  year         = { {{ year }} },
+  {% if site.doi %}doi          = { {{ site.doi }} },{% endif %}
+  url          = { {{ full_url }} },
+  howpublished = {Presentation slides{% if site.conference_title %} at {{ site.conference_title }}{% endif %}},
+  note         = {Available at {{ full_url }}{% if site.doi %}, DOI: {{ site.doi }}{% endif %}}
+}

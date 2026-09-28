@@ -1,20 +1,33 @@
-theme: ioer-presentation-theme
+theme: reveal-presentation-theme
 
-# the presentation title
-title: IOER Presentation Template
+# Presentation Metadata
+title: "Sample Presentation Title"
 
-firstslide-title: Welcome
-firstslide-subtitle: .. to the IOER example web presentation  
-firstslide-author: <br>with RevealJS!
+firstslide-title: "Sample Presentation Title<br>"
+firstslide-subtitle: "A Modular, Reproducible Web Slide Template"
+firstslide-author: "Dr. Jane Doe | Department or Research Centre"
 
-controls: true # direction arrows in the presentation
-progress: true # progress bar
-center: true # center vertically
-width: 1280 # widescreen 1280, classic 960
-transition: fade # none/fade/slide/convex/concave/zoom
+# Optional Background Photo Attribution on Title Slide:
+firstslide-bg-attribution: 'Background: <a href="https://example.com">Photo Credit</a> / <a href="https://creativecommons.org/">CC BY 4.0</a>'
 
-baseurl: /common/presentation # adjust to the path of your presentation
+# Presentation Configuration
+controls: true      # Direction navigation controls (bottom right)
+progress: true      # Progress bar
+center: true        # Vertically center slide content
+width: 1280         # Canvas resolution: 1280x700 widescreen
+height: 700
+transition: fade    # none / fade / slide / convex / concave / zoom
 
-# Don't change anything below
+# Paths & URLs (Crucial for CI/CD and cite.bib)
+url: "https://slides.ad.ioer.info"
+baseurl: "/sample-presentation"
+
+# Optional Zenodo Metadata (Used by 'bundle exec slides zenodo'):
+zenodo_community: ioer_dresden
+conference_title: "Conference or Seminar Name"
+conference_place: "Dresden, Germany"
+# doi: "10.5281/zenodo.XXXXXXX" # Uncomment after initial Zenodo publication
+
+# Markdown settings
 markdown: kramdown
 markdown_ext: ignore

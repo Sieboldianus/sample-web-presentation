@@ -1,13 +1,15 @@
-# This file is a template, and might need editing before it works on your project.
-# Template project: https://gitlab.com/pages/jekyll
-# Docs: https://docs.gitlab.com/ce/pages/
-image: jekyll/jekyll
+image: ruby:3.2
 
 variables:
   JEKYLL_ENV: production
 
 before_script:
   - bundle install
+
+stages:
+  - test
+  - deploy
+  - export
 
 test:
   stage: test
@@ -28,3 +30,22 @@ pages:
       - public
   only:
     - main
+
+# Optional manual PDF generation via DeckTape Docker
+# only triggers on manual builds
+export_pdf:
+  stage: export
+  image:
+    name: astefanutti/decktape:latest
+    entrypoint: [""]
+  rules:
+    - if: $CI_COMMIT_BRANCH == "main"
+      when: manual
+      allow_failure: true
+  script:
+    - decktape reveal "https://slides.ad.ioer.info${CI_PROJECT_NAME}/" presentation.pdf --size 1280x700 --pause 5500 --load-pause 3000
+  artifacts:
+    name: "presentation-pdf-${CI_COMMIT_SHORT_SHA}"
+    paths:
+      - presentation.pdf
+    expire_in: 3 months

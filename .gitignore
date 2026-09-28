@@ -4,3 +4,8 @@ vendor/
 .sass-cache
 .jekyll-metadata
 Gemfile.lock
+.jekyll-cache/
+_unused_assets/
+*.pdf
+.temp*
+.env
