@@ -33,3 +33,55 @@ markdown: kramdown
 markdown_ext: ignore
 
 doi: "10.5281/zenodo.23011567"
+
+## ==============================================================================
+## Zenodo Archival & DOI Metadata (Optional Overrides)
+## All fields below override the automatic heuristics in 'bundle exec slides zenodo'
+## copy/uncomment, to override default values; example values provided below
+## ==============================================================================
+
+## 1. Clean Title (Overrides the header title if the slide title contains dates/commas)
+# zenodo_title: "Sustainability Transformation HaCLAthon: Living Book Synthesis"
+
+## 2. Explicit Publication Date (Format: YYYY-MM-DD, overrides folder-date guessing)
+# zenodo_date: "2026-09-23"
+
+## 3. Community Identifier (Defaults to 'ioer_dresden')
+# zenodo_community: "ioer_dresden"
+
+## 4. Multi-Author & Affiliation Support (Supports ORCID!)
+## If defined, overrides 'firstslide-author'
+# zenodo_creators:
+#   - name: "Dunkel, Alexander"
+#     affiliation: "Leibniz Institute of Ecological Urban and Regional Development (IOER)"
+#     orcid: "0000-0002-1234-5678"
+#   - name: "Löchner, Marc"
+#     affiliation: "Technische Universität Dresden (TUD)"
+
+## 5. Conference Details (Populates Zenodo's formal Conference indexing block)
+# conference_title: "4th IOER Conference 'Space & Transformation'"
+# conference_acronym: "IOER 2026"
+# conference_dates: "22-23 September 2026"
+# conference_place: "Dresden, Germany"
+# conference_session: "Großer Saal - HaCLAthon"
+# conference_url: "https://conference.ioer.info/"
+
+## 6. Keywords & Topic Indexing
+# zenodo_keywords:
+#   - "Spatial Data Science"
+#   - "Reproducible Research"
+#   - "Jupyter Book"
+#   - "Living Book"
+#   - "Open Science"
+#   - "IOER"
+#   - "Reveal.js"
+
+## 7. Licensing & Resource Type
+# zenodo_license: "CC-BY-4.0"       # e.g., CC-BY-4.0, CC-BY-NC-SA-2.0, MIT, CC0-1.0
+# zenodo_upload_type: "presentation" # e.g., presentation, poster, software, lesson
+
+## 8. Related External Works & Source Repositories
+# zenodo_git_repo: "https://github.com/ioer-dresden/haclathon-presentation"
+
+## 9. Existing DOI (Populated automatically after your first publication for versioning)
+# doi: "10.5281/zenodo.22974209"
